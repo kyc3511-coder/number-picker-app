@@ -1,0 +1,29 @@
+{
+  "name": "number-picker-app",
+  "version": "0.1.0",
+  "description": "A tiny, privacy-friendly random number picker that runs entirely in the browser.",
+  "author": {
+    "name": "kyc3511-coder",
+    "url": "https://github.com/kyc3511-coder"
+  },
+  "homepage": "https://kyc3511-coder.github.io/number-picker-app/",
+  "repository": "https://github.com/kyc3511-coder/number-picker-app",
+  "license": "MIT",
+  "keywords": ["random", "number-picker", "lottery", "web-app"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Number Picker",
+    "shortDescription": "Pick random numbers in your browser.",
+    "longDescription": "A compact random number picker with configurable range, quantity, duplicate handling, and recent results.",
+    "developerName": "kyc3511-coder",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://kyc3511-coder.github.io/number-picker-app/",
+    "defaultPrompt": [
+      "Open the number picker.",
+      "Help me choose fair number-picker settings."
+    ],
+    "brandColor": "#635BFF"
+  }
+}
+
