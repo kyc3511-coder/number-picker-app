@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17162b">
+  <meta name="description" content="범위와 개수를 정해 무작위 번호를 뽑는 간단한 웹앱">
+  <title>번호 뽑기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <p class="eyebrow">RANDOM PICKER</p>
+      <h1>번호 뽑기</h1>
+      <p class="subtitle">범위와 개수를 정하고 버튼을 눌러보세요.</p>
+    </header>
+
+    <form id="picker-form">
+      <div class="field-grid">
+        <label>최솟값<input id="min" type="number" value="1" step="1" required></label>
+        <label>최댓값<input id="max" type="number" value="45" step="1" required></label>
+        <label>뽑을 개수<input id="count" type="number" value="6" min="1" step="1" required></label>
+      </div>
+
+      <label class="toggle">
+        <input id="unique" type="checkbox" checked>
+        <span>중복 없이 뽑기</span>
+      </label>
+
+      <button type="submit">번호 뽑기</button>
+      <p id="error" class="error" role="alert" aria-live="polite"></p>
+    </form>
+
+    <section class="result-panel" aria-labelledby="result-title">
+      <div class="result-heading">
+        <h2 id="result-title">결과</h2>
+        <button id="copy" class="text-button" type="button" disabled>복사</button>
+      </div>
+      <div id="results" class="results" aria-live="polite">
+        <p class="empty">아직 뽑은 번호가 없어요.</p>
+      </div>
+    </section>
+
+    <details>
+      <summary>최근 기록</summary>
+      <ol id="history" class="history"><li class="empty">기록이 없습니다.</li></ol>
+    </details>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
