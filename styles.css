@@ -93,6 +93,7 @@ details { margin-top: 18px; color: #b9b6ca; }
 summary { width: fit-content; cursor: pointer; font-weight: 700; }
 .history { margin: 12px 0 0; padding-left: 24px; }
 .history li { margin: 7px 0; }
+.credit { margin: 24px 0 0; color: #77738b; font-size: .82rem; text-align: center; }
 
 @keyframes pop { from { opacity: 0; transform: scale(.6); } }
 @media (max-width: 540px) {
